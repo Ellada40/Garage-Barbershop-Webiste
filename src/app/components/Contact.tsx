@@ -39,7 +39,25 @@ export function Contact() {
               </div>
               <div>
                 <h3 className="text-xl text-white mb-2 tracking-tight">Адрес</h3>
-                <p className="text-neutral-400 text-lg">Ахматбека Суюмбаева 16а</p>
+                <a
+                  href="https://2gis.kg/bishkek/search/Ахматбека%20Суюмбаева%2016а"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-neutral-400 text-lg hover:text-white transition-colors cursor-pointer block"
+                  onClick={(e) => {
+                    try {
+                      const appUrl = 'dgis://2gis.kg/search/Ахматбека%20Суюмбаева%2016а';
+                      window.location.href = appUrl;
+                      setTimeout(() => {
+                        if (document.hidden) return;
+                      }, 500);
+                    } catch (err) {
+                      console.log('2GIS app not available, using web fallback');
+                    }
+                  }}
+                >
+                  Ахматбека Суюмбаева 16а
+                </a>
                 <p className="text-neutral-400 text-lg">Бишкек, Кыргызстан</p>
               </div>
             </div>
@@ -82,29 +100,43 @@ export function Contact() {
               <div>
                 <h3 className="text-xl text-white mb-2 tracking-tight">Социальные сети</h3>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/garaj_barbershop_vostok5?igsh=MTJzOXJjYXN1bXg5bw=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-neutral-400 text-lg hover:text-white transition-colors"
                 >
-                  @garazh_barbershop
+                  @garaj_barbershop_vostok5
                 </a>
               </div>
             </div>
           </motion.div>
 
-          <motion.div
+          <motion.a
+            href="https://2gis.kg/bishkek/search/Ахматбека%20Суюмбаева%2016а"
+            target="_blank"
+            rel="noopener noreferrer"
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
-            className="bg-neutral-900 h-96 flex items-center justify-center border border-neutral-800"
+            className="bg-neutral-900 h-96 flex items-center justify-center border border-neutral-800 hover:border-neutral-600 hover:bg-neutral-800/50 transition-all duration-300 cursor-pointer group"
+            onClick={(e) => {
+              try {
+                const appUrl = 'dgis://2gis.kg/search/Ахматбека%20Суюмбаева%2016а';
+                window.location.href = appUrl;
+                setTimeout(() => {
+                  if (document.hidden) return;
+                }, 500);
+              } catch (err) {
+                console.log('2GIS app not available, using web fallback');
+              }
+            }}
           >
             <div className="text-center p-8">
-              <MapPin className="w-16 h-16 text-neutral-600 mx-auto mb-4" />
-              <p className="text-neutral-500 text-lg">Карта местоположения</p>
-              <p className="text-neutral-600 text-sm mt-2">Ахматбека Суюмбаева 16а, Бишкек</p>
+              <MapPin className="w-16 h-16 text-neutral-600 group-hover:text-neutral-400 mx-auto mb-4 transition-colors duration-300" />
+              <p className="text-neutral-500 group-hover:text-neutral-300 text-lg transition-colors duration-300">Карта местоположения</p>
+              <p className="text-neutral-600 group-hover:text-neutral-400 text-sm mt-2 transition-colors duration-300">Ахматбека Суюмбаева 16а, Бишкек</p>
             </div>
-          </motion.div>
+          </motion.a>
         </div>
       </div>
     </section>

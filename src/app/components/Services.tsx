@@ -1,44 +1,68 @@
 import { motion } from 'motion/react';
 import { useInView } from 'motion/react';
 import { useRef } from 'react';
-import { Scissors, Sparkles, Baby, Wind, Heart, User } from 'lucide-react';
+import { Scissors, Baby, Wind, User, Sparkles, Droplet, Crown, FileCheck, Flame } from 'lucide-react';
 
 const services = [
   {
     icon: Scissors,
     title: 'Мужская стрижка',
     description: 'Классические и современные стрижки любой сложности. Индивидуальный подход к каждому клиенту.',
-    price: 'от 500 сом',
-  },
-  {
-    icon: Sparkles,
-    title: 'Стрижка + Борода',
-    description: 'Комплексный уход: стрижка волос и моделирование бороды. Создаём гармоничный образ.',
-    price: 'от 800 сом',
+    price: '600 сом',
   },
   {
     icon: Baby,
     title: 'Детская стрижка',
     description: 'Комфортная стрижка для мальчиков до 12 лет. Терпение и профессионализм.',
-    price: 'от 400 сом',
-  },
-  {
-    icon: User,
-    title: 'Оформление бороды',
-    description: 'Коррекция формы, бритьё, уход. Королевское бритьё опасной бритвой.',
-    price: 'от 400 сом',
+    price: '500 сом',
   },
   {
     icon: Wind,
     title: 'Укладка',
     description: 'Профессиональная укладка с использованием премиальных стайлинговых средств.',
-    price: 'от 200 сом',
+    price: '200 сом',
   },
   {
-    icon: Heart,
-    title: 'Уход и консультация',
-    description: 'Рекомендации по уходу за волосами и бородой. Подбор средств.',
-    price: 'Бесплатно',
+    icon: User,
+    title: 'Окантовка бороды',
+    description: 'Аккуратная коррекция контура бороды для поддержания формы.',
+    price: '300 сом',
+  },
+  {
+    icon: Sparkles,
+    title: 'Оформление бороды',
+    description: 'Моделирование бороды, коррекция формы, стайлинг.',
+    price: '500 сом',
+  },
+  {
+    icon: Droplet,
+    title: 'Тонировка седины',
+    description: 'Профессиональное закрашивание седых волос для естественного вида.',
+    price: '500 сом',
+  },
+  {
+    icon: Crown,
+    title: 'Королевское бритье',
+    description: 'Классическое бритьё опасной бритвой с горячими полотенцами.',
+    price: '500 сом',
+  },
+  {
+    icon: FileCheck,
+    title: 'Чистка лица',
+    description: 'Глубокое очищение и уход за кожей лица.',
+    price: '600 сом',
+  },
+  {
+    icon: Flame,
+    title: 'Горячий воск',
+    description: 'Удаление нежелательных волос с использованием горячего воска.',
+    price: 'от 100 сом',
+  },
+  {
+    icon: Scissors,
+    title: 'Стрижка + Чистка лица',
+    description: 'Комплексный уход: стрижка и глубокая чистка лица в одном посещении.',
+    price: '1000 сом',
   },
 ];
 

@@ -72,7 +72,7 @@ export function Footer() {
           <div>
             <h3 className="text-white mb-4 text-sm uppercase tracking-widest">Мы в соцсетях</h3>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/garaj_barbershop_vostok5?igsh=MTJzOXJjYXN1bXg5bw=="
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2 bg-neutral-900 text-white hover:bg-neutral-800 transition-colors text-sm"

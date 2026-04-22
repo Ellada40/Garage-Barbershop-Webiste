@@ -41,7 +41,7 @@ export function BookingCTA() {
               <span>Позвонить</span>
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/garaj_barbershop_vostok5?igsh=MTJzOXJjYXN1bXg5bw=="
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-3 px-10 py-5 border border-white text-white hover:bg-white hover:text-black transition-all duration-200 text-lg tracking-wide"
