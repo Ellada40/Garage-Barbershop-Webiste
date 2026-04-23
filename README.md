@@ -1,7 +1,6 @@
 
   # Premium Barbershop Website
-
-  This is a code bundle for Premium Barbershop Website. The original project is available at https://www.figma.com/design/nUkdGmC3Ykd0OcUFHaqE8M/Premium-Barbershop-Website.
+https://garajbarbershop.netlify.app/).
 
   ## Running the code
 
