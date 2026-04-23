@@ -1,6 +1,6 @@
 
   # Premium Barbershop Website
-https://garajbarbershop.netlify.app/).
+https://garajbarbershop.netlify.app/
 
   ## Running the code
 
